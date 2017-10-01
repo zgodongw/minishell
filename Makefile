@@ -6,7 +6,7 @@
 #    By: zgodongw <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/09/28 17:00:02 by zgodongw          #+#    #+#              #
-#    Updated: 2017/09/30 16:53:35 by zgodongw         ###   ########.fr        #
+#    Updated: 2017/10/01 17:09:13 by zgodongw         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -117,3 +117,8 @@ objs_dir:
 
 val:
 	@valgrind --leak-check=full ./$(NAME) && rm -rf *.dSYM
+
+git:
+	git add $(SRC)
+	git commit -m "Source file"
+	git push
