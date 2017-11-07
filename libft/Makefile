@@ -6,7 +6,7 @@
 #    By: zgodongw <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/07/31 15:34:27 by zgodongw          #+#    #+#              #
-#    Updated: 2017/09/30 15:46:12 by zgodongw         ###   ########.fr        #
+#    Updated: 2017/10/16 15:20:38 by zgodongw         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -89,7 +89,8 @@ SRCS_NAME = ft_abs.c\
 			ft_strnjoin.c\
 			ft_sstrnew.c\
 			ft_sstrlen.c\
-			ft_isspace.c
+			ft_isspace.c\
+			ft_preg_replace.c
 
 SRCS_PATH = ./srcs/
 
