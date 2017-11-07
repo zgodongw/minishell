@@ -6,7 +6,7 @@
 /*   By: zgodongw <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/05/27 14:27:13 by zgodongw          #+#    #+#             */
-/*   Updated: 2017/09/30 16:56:09 by zgodongw         ###   ########.fr       */
+/*   Updated: 2017/10/16 15:19:58 by zgodongw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,6 +96,7 @@ char				*ft_strsub(char const *s, unsigned int start, size_t len);
 char				*ft_strjoin(char const *s1, char const *s2);
 char				*ft_strtrim(char const *s);
 char				**ft_strsplit(char const *s, char c);
+char				*ft_preg_replace(char const *s, char c);
 char				*ft_itoa(int n);
 char				*ft_basetoa(uintmax_t number, int base);
 int					ft_abs(int a);
