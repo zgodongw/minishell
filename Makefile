@@ -6,7 +6,7 @@
 #    By: zgodongw <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/09/28 17:00:02 by zgodongw          #+#    #+#              #
-#    Updated: 2017/10/01 17:09:13 by zgodongw         ###   ########.fr        #
+#    Updated: 2017/10/16 15:26:59 by zgodongw         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,7 +35,6 @@ SRCB = srcs/bonus/signal_handlers.c\
 
 HDR = libft/includes/libft.h\
 	  includes/minishell.h\
-	  includes/libft.h
 
 SRC = $(SRCCD1) $(SRCEC1) $(SRCEX1) $(SRCENV) $(SRCM) $(SRCCOR) $(SRCB)
 
@@ -117,8 +116,3 @@ objs_dir:
 
 val:
 	@valgrind --leak-check=full ./$(NAME) && rm -rf *.dSYM
-
-git:
-	git add $(SRC)
-	git commit -m "Source file"
-	git push
