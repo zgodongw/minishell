@@ -6,7 +6,7 @@
 /*   By: zgodongw <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/28 16:12:17 by zgodongw          #+#    #+#             */
-/*   Updated: 2017/09/30 12:29:02 by zgodongw         ###   ########.fr       */
+/*   Updated: 2017/10/16 15:31:08 by zgodongw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,9 +44,12 @@ void		printstrarray(char **names)
 void		ft_execmd(char *cmd, t_all *this)
 {
 	t_type	type;
+	char	*cm;
 
 	type = 0;
-	this->cmdarray = ft_strsplit(cmd, ' ');
+	cm = ft_preg_replace(cmd, ' ');
+	this->cmdarray = ft_strsplit(cm, ' ');
+	ft_strdel(&cm);
 	if (ft_strcmp(this->cmdarray[0], "echo") != 0)
 	{
 		if ((type = isbuiltin(this->cmdarray[0])) == NOT)
