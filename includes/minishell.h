@@ -6,14 +6,14 @@
 /*   By: zgodongw <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/30 15:59:27 by zgodongw          #+#    #+#             */
-/*   Updated: 2017/09/30 16:21:10 by zgodongw         ###   ########.fr       */
+/*   Updated: 2017/10/16 15:26:16 by zgodongw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef MINISHELL_H
 # define MINISHELL_H
 
-# include "libft.h"
+# include "../libft/includes/libft.h"
 # include <stdio.h>
 # define BACKSPACE "\033[XD"
 
